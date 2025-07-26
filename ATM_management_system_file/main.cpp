@@ -37,7 +37,7 @@ class ATM {
             string address ;
         };
         vector <account> accounts ;
-         
+
     public : 
 
         void create_account();
@@ -352,8 +352,8 @@ void ATM::withdraw(){
                 }
             }
             else {
-                gotoxy(17,8);
-                cout << "\033[1;31mThis amount is not available in your account." ;
+                gotoxy(13,8);
+                cout << "\033[1;31mThey are No Accounts Available to Withdraw.!" ;
                 for(int i = 5 ; i >= 0 ; i--){
                     cout << "\r" ;
                     gotoxy(17,10);
